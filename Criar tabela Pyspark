@@ -1,0 +1,13 @@
+new_tupla1 = ('CA',10000,60000)
+new_tupla2 = ('HA',12450,55000)
+new_tupla3 = ('LA',12333,45000)
+
+new_array_linhas = [new_tupla1,new_tupla2,new_tupla3]
+
+new_array_colunas = ['State', 'Population', 'Salaire']
+
+df = spark.createDataFrame(new_array_linhas,new_array_colunas)
+df.show()
+
+#print(new_array_linhas)
+
