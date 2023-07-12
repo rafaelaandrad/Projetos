@@ -1,0 +1,7 @@
+from azureml.opendatasets import PublicHolidays
+ 
+data = PublicHolidays()
+ 
+df2 = data.to_spark_dataframe()
+ 
+display(df2.limit(10))
